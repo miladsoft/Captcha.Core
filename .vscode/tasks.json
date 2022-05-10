@@ -1,0 +1,29 @@
+{
+    "version": "2.0.0",
+    "command": "dotnet",
+    "args": [],
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "dotnet",
+            "args": [
+                "build",
+                "${workspaceRoot}/src/Captcha.TestWebApp/Captcha.TestWebApp.csproj"
+            ],
+            "problemMatcher": "$msCompile",
+            "group": "build"
+        },
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "dotnet",
+            "args": [
+                "build",
+                "${workspaceRoot}/src/Captcha.TestApiApp/Captcha.TestApiApp.csproj"
+            ],
+            "problemMatcher": "$msCompile",
+            "group": "build"
+        }
+    ]
+}
